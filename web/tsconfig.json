@@ -1,15 +1,25 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "ES2022",
+    "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./"
+    "rootDir": "./",
+    "types": [
+      "jest",
+      "node"
+    ]
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "frontend", "dist"]
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "frontend",
+    "dist"
+  ]
 }
