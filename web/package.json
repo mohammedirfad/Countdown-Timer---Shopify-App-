@@ -1,0 +1,39 @@
+{
+  "name": "shopify-app-template-node",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "debug": "node --inspect-brk --require tsx/cjs index.ts",
+    "dev": "cross-env NODE_ENV=development nodemon --exec tsx index.ts --ignore ./frontend",
+    "serve": "cross-env NODE_ENV=production tsx index.ts"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "dependencies": {
+    "@shopify/shopify-app-express": "^5.0.8",
+    "@shopify/shopify-app-session-storage-sqlite": "^4.0.8",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "joi": "^18.1.2",
+    "mongoose": "^9.5.0",
+    "serve-static": "^1.14.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.0",
+    "@types/serve-static": "^2.2.0",
+    "jest": "^30.3.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
+    "ts-jest": "^29.4.9",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,50 @@
+{% comment %}
+  Helixo Countdown Timer App Block
+  NOTE: The theme editor shows a static preview only.
+  The live countdown timer appears on the actual storefront.
+{% endcomment %}
+
+<div 
+  id="helixo-countdown-timer-root" 
+  data-product-id="{{ product.id }}" 
+  data-shop="{{ shop.permanent_domain }}"
+  style="display:block;"
+>
+  {% comment %} Static placeholder - visible in Theme Editor only (JS doesn't run in editor) {% endcomment %}
+  <div id="helixo-editor-placeholder" style="
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 16px 24px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-family: sans-serif;
+  ">
+    <p style="margin:0 0 4px 0; font-size:12px; opacity:0.6; text-transform:uppercase; letter-spacing:1px;">
+      ⏱ Helixo Countdown Timer
+    </p>
+    <p style="margin:0 0 4px 0; font-size:28px; font-weight:bold; letter-spacing:2px;">
+      {{ block.settings.heading | default: 'Special Offer ends in:' }}
+    </p>
+    <p style="margin:0; font-size:11px; opacity:0.5;">
+      Live countdown loads on the storefront
+    </p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Helixo Countdown Timer",
+  "target": "section",
+  "stylesheet": "countdown-timer.css",
+  "javascript": "countdown-timer.js",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Timer Label",
+      "default": "Special Offer ends in:"
+    }
+  ]
+}
+{% endschema %}

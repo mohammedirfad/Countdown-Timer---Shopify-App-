@@ -1,0 +1,6 @@
+type = "theme"
+name = "Countdown Timer App"
+uid = "c6065c63-0501-6cd3-a4fc-e8730c4b7d55bd924868"
+
+[extension]
+type = "theme"
