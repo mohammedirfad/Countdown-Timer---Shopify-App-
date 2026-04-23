@@ -2,7 +2,7 @@
 
 client_id = "7f49c8dc5b79f6489ca80f66f1fcc673"
 name = "Countdown Timer"
-application_url = "https://tremendous-gilbert-aluminium-feet.trycloudflare.com"
+application_url = "https://ellen-opinion-century-soccer.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ api_version = "2026-07"
 scopes = "read_products,write_products"
 
 [auth]
-redirect_urls = [ "https://tremendous-gilbert-aluminium-feet.trycloudflare.com/api/auth/callback" ]
+redirect_urls = [ "https://ellen-opinion-century-soccer.trycloudflare.com/api/auth/callback" ]
 
 [app_proxy]
-url = "https://tremendous-gilbert-aluminium-feet.trycloudflare.com/api/storefront"
+url = "https://ellen-opinion-century-soccer.trycloudflare.com/api/storefront"
 subpath = "countdown"
 prefix = "apps"
